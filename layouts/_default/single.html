@@ -7,6 +7,19 @@
 
 {{ if .Site.DisqusShortname -}}
 <h2>Comments</h2>
-{{ template "_internal/disqus.html" . }}
-{{- end }}
+<script src="https://giscus.app/client.js"
+  data-repo="https://github.com/yfsoftcom/yfsoftcom.github.io"
+  data-repo-id="yfsoftcom.github.io"
+  data-category="default"
+  data-category-id="default"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="light"
+  data-lang="zh-CN"
+  crossorigin="anonymous"
+  async>
+</script>
 {{- end }}
